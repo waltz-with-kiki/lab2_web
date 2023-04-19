@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab 2</title>
+    <style>
+
+        div {
+        line-height: 3;
+        }
+        
+        </style>
+    <link rel="stylesheet" href="style.css">
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="index.js"></script>
+</head>
+
+
+<body>
+    <form id="form" onsubmit="return false">
+        <h1>Калькулятор вкладов</h1>
+        <div>
+    <select id="Select1" >
+        <option value="">Не выбран</option>
+        <option value="0">Пополняемый</option>
+        <option value="1">Срочный</option>
+    </select>
+
+    <select id="Select2">
+        
+    </select>
+</div>
+
+    <div class="input">
+        <input type="number" id="depositSum" min="0" placeholder="Сумма вклада, руб"/>
+    </div>
+    <div>
+        <button type="submit" id="submit"> Рассчитать </button>
+    </div>
+    </form>
+
+    <div class="resultWindow">
+        <p id="conclusion"></p>
+   
+</body>
+</html>
