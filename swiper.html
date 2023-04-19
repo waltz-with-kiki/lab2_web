@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+
+</head>
+<style>
+    html,
+    body{
+        height: 100%;
+        font-size: 15px;
+    }
+    .swiper {
+  width: 1000px;
+  height: 100%;
+}
+.swiper-slide{
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper-slide img{
+    width: 50%;
+    object-fit: cover;
+}
+</style>
+
+<body>
+
+
+<div class="swiper">
+    
+    <div class="swiper-wrapper">
+    
+      <div class="swiper-slide"><img src="https://i.pinimg.com/564x/d5/f7/57/d5f7578843f4c3758de86c2857d74d06.jpg"></div>
+      <div class="swiper-slide"><img src="https://i.pinimg.com/564x/36/32/37/363237632f3e0a832dec8dcdaac46dff.jpg"></div>
+      <div class="swiper-slide"><img src="https://i.pinimg.com/564x/d9/38/5c/d9385ca906c51b03c7884c654a4a514f.jpg"></div>
+      ...
+    </div>
+   
+    <div class="swiper-pagination"></div>
+  
+    
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+
+  </div>
+
+  <script>
+    const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+
+
+  </script>
+</body>
+</html>
+  
